@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Interactive Quiz</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <main class="quiz-container">
+        <header class="quiz-header">
+            <p class="eyebrow">TEST YOUR KNOWLEDGE</p>
+            <h1>Interactive Quiz</h1>
+            <p>Choose an answer and see how well you do!</p>
+        </header>
+
+        <section id="quiz-screen">
+            <div class="quiz-info">
+                <span id="progress">Question 1</span>
+            </div>
+
+            <h2 id="question"></h2>
+
+            <div id="options"></div>
+
+            <p id="explanation" aria-live="polite"></p>
+
+            <button id="next-btn" type="button" disabled>
+                Next Question
+            </button>
+            <button id="submit-btn" type="button" disabled> submit</button>
+        </section>
+    </main>
+<section id="structured-screen">
+  <h2>Structured Questions</h2>
+
+  <p id="structured-progress"></p>
+  <h3 id="structured-question"></h3>
+
+  <p id="structured-marks"></p>
+
+  <textarea
+    id="structured-answer"
+    placeholder="Type your answer here..."
+    rows="5"
+  ></textarea>
+
+  <button id="submit-structured" type="button">
+    Submit Answer
+  </button>
+
+  <div id="structured-feedback" aria-live="polite"></div>
+
+  <button id="next-structured" type="button" disabled>
+    Next Question
+  </button>
+</section>
+
+
+     <script type="module" src="Quiz app.js"></script>
+
+</body>
+</html>
